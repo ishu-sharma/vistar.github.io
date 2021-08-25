@@ -1,0 +1,43 @@
+
+.hov-btn{
+	width: 130px;
+	height: 45px;
+	background: none;
+	color: rgb(44,44,44);
+	border: none;
+	font-weight: 700;
+	font-size: 1rem;
+	border-radius: 50px;
+	background: #fff;
+	box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #FFF;
+	position: relative;
+}
+.hov-btn::before{
+	content: '';
+	position: absolute;
+	top: -10%;
+	left: -5%;
+	width: 110%;
+	height: 120%;
+	border-radius: 50px;
+	z-index: -1;
+	background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+	transform: scale(0.8);
+	transition: transform .4s;
+}
+.hov-btn::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+	z-index: -2;
+	filter: blur(10px);
+	transform: scale(0.5);
+	transition: transform .4s;
+}
+.hov-btn:hover::before, .hov-btn:hover::after{
+	transform: scale(1);
+}

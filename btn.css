@@ -1,0 +1,46 @@
+.brd-btn{
+	color: #ff4d6d;
+	position: relative;
+	padding: 0.55rem 1.5rem;
+	background: #FFF;
+	border-color: transparent;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	transition: all 1s;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.brd-btn:after, .brd-btn:before{
+	content: "";
+	width: 13px;
+	height: 10px;
+	position: absolute;
+	border: 0px solid #FFF;
+	transition: all 0.7s ease;
+}
+
+.brd-btn:after{
+	top: -1px;
+	left: -1px;
+	border-top: 4px solid #ff4d6d;
+	border-left: 4px solid #ff4d6d;
+
+}
+.brd-btn:before{
+	bottom: -1px;
+	right: -1px;
+	border-right: 4px solid #ff4d6d;
+	border-bottom: 4px solid #ff4d6d;
+	
+}
+
+.brd-btn:hover{
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+
+}
+
+.brd-btn:hover:before, .brd-btn:hover:after{
+	width: 105%;
+	height: 110%;
+}

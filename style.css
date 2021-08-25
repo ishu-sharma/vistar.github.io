@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+body{
+	scroll-behavior: smooth;
+}
+
+.main_container{
+	margin-left: 5.3rem;
+}
+
+.head_section{
+	float: right;
+	padding: 1rem;
+	margin-top: 2rem;
+}
+.head_section a{
+	margin: 0 0.3rem;
+}
+
+.menu img{
+    margin-left: 1.8rem;
+    width: 1.4rem;
+    padding-bottom: 3rem;
+}
+
+.menu{
+    padding-top: 0.9rem;
+}
+
+.nav-item{
+    list-style: none;
+    display: flex;
+    padding-top: 1.6rem;
+}
+
+.nav-link{
+    display: none;
+    /* color:#FF0066; */
+    
+}
+
+.nav-item span img{
+    height: 1.5rem;
+    /* margin-left: 1rem; */
+}
+
+.nav-item span{
+    padding-bottom: 1.6rem;
+}
+
+.side-nav{
+    width: 5.2rem;
+    height: 100vh;
+    position: fixed;
+    background-color: #fff;
+}
+
+.profile img{
+    height: 3.5rem;
+}
+
+.profile{
+    margin-left: 1.2rem;
+}
+
+.ml-2{
+    display: none;
+}
+
+.b2{
+    display: none;
+}
+
+.social{
+    margin-right: 1rem;
+}
+.social img{
+    height: 1.6rem;
+}
+
+.light{
+    display: none;
+}
+
+.main-heading{
+	margin-top: 8rem;
+}
+
+
+.spacer{
+	margin: 5rem 0;
+}
+
+#contact form{
+	margin-top: 6rem;
+}
+#contact{
+	padding: 2rem;
+}
+
+.layer-btn {
+        padding: 0.55rem 1.5rem;
+        background: #171717;
+        color: #fff;
+        border: none;
+        transition: all 0.4s ease;
+        cursor: pointer;
+      }
+
+      .layer-btn:hover {
+        border-radius: 5px;
+        transform: translateY(-10px);
+        box-shadow: 0 7px 0 -2px #f85959, 0 15px 0 -4px #39a2db,
+          0 16px 10px -3px #39a2db;
+      }
+
+
+
+.carousel-inner .carousel-item .carousel-content h5{
+    font-weight: bold;
+    color: #FFF;
+}
+
+.carousel-inner .carousel-item .carousel-content p{
+    color: #FFF;
+}
+.outline-btn {
+        background-color: #ff6d00;
+        color: #fff;
+        
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+      }
+
+      .outline-btn:hover {
+        background-color: transparent;
+        color: #FFF;
+        border-color: #ff6d00;
+      }
+
+.outline-btn2 {
+        background-color: #5a189a;
+        color: #fff;
+        
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+      }
+
+      .outline-btn2:hover {
+        background-color: transparent;
+        color: #FFF;
+        border-color: #5a189a;
+      }
+
+      .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+
+      /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .carousel-inner .carousel-item .carousel-content{
+    position: absolute;
+    top: 32%;
+    left: 13%;
+    }
+
+.outline-btn, .outline-btn2 {
+     padding: 0.2rem 0.6rem;
+     font-size: 0.8rem;
+        
+      }
+    
+    .carousel-inner .carousel-item .overlay .carousel-content h5{
+       
+       font-size: 1rem;
+    }
+    .carousel-inner .carousel-item .overlay .carousel-content p{
+       
+       font-size: 0.6rem;
+    }
+
+   
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .carousel-inner .carousel-item .carousel-content{
+    position: absolute;
+    top: 32%;
+    left: 15%;
+    
+}
+    
+.outline-btn, .outline-btn2 {
+     padding: 0.55rem 1rem;
+        
+      }
+    .carousel-inner .carousel-item .overlay .carousel-content h5{
+       
+       font-size: 2.6rem;
+    }
+    .carousel-inner .carousel-item .overlay .carousel-content p{
+       
+       font-size: 1.1rem;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .carousel-inner .carousel-item .carousel-content{
+    position: absolute;
+    top: 32%;
+    left: 18%;
+    
+}
+    
+.outline-btn, .outline-btn2 {
+     padding: 0.66rem 1.5rem;
+        
+      }
+    .carousel-inner .carousel-item .overlay .carousel-content h5{
+       
+       font-size: 5rem;
+    }
+    .carousel-inner .carousel-item .overlay .carousel-content p{
+       
+       font-size: 1.3rem;
+    }
+}
